@@ -57,6 +57,18 @@ body {
   text-align: center;
 }
 
+/* About 页面列表样式 */
+.section ul {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding-left: 40px;
+  max-width: 600px;
+  text-align: left;
+}
+.section li {
+  margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
   text-align: center;

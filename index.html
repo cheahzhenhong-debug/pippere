@@ -3,91 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>我的个人主页</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #74ebd5, #9face6);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .card {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-      width: 320px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    p {
-      color: #555;
-      margin: 10px 0 20px;
-    }
-
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin: 5px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .btn1 {
-      background: #4CAF50;
-      color: white;
-    }
-
-    .btn1:hover {
-      background: #45a049;
-    }
-
-    .btn2 {
-      background: #2196F3;
-      color: white;
-    }
-
-    .btn2:hover {
-      background: #0b7dda;
-    }
-
-  </style>
+  <title>Ricky的网站</title>
+  <link rel="stylesheet" href="docs/style.css">
 </head>
 
 <body>
 
   <div class="card">
-    <h1>👋 你好，我是Ricky</h1>
-    <p>这是我的第一个个人网站 🚀</p>
+    <h1>👋 欢迎来到Ricky的网站</h1>
+    <p>探索我的个人网站</p>
 
-    <button class="btn1" onclick="sayHello()">点击问候</button>
-    <button class="btn2" onclick="changeText()">改变文字</button>
-
-    <p id="text">欢迎来到我的网站！</p>
+    <a href="docs/index.html"><button class="btn1">进入主页</button></a>
+    <a href="docs/about.html"><button class="btn2">关于我</button></a>
+    <a href="docs/projects.html"><button class="btn2">我的项目</button></a>
+    <a href="docs/contact.html"><button class="btn2">联系我</button></a>
   </div>
-
-  <script>
-    function sayHello() {
-      alert("你好！欢迎来到我的网站 🎉");
-    }
-
-    function changeText() {
-      document.getElementById("text").innerText =
-        "你成功点击了按钮！🔥";
-    }
-  </script>
 
 </body>
 </html>

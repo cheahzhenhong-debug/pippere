@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <title>胡椒世界</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡椒农业网 - 马来西亚胡椒种植与销售</title>
+    <meta name="description" content="胡椒农业网提供马来西亚胡椒种植技术、优质胡椒产品和市场资讯，帮助农户提高产量与收益。">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>🌱 马来西亚胡椒农业网</h1>
+    <p>提供胡椒种植技术与优质胡椒产品</p>
+</header>
 
-  <header>
-    <h1>🌶️ 胡椒世界 Pepper World</h1>
-    <p>探索胡椒的种类与用途</p>
-  </header>
+<nav>
+    <a href="#home">首页</a>
+    <a href="#products">胡椒产品</a>
+    <a href="#tech">种植技术</a>
+    <a href="#contact">联系我们</a>
+</nav>
 
-  <nav>
-    <a href="#types">种类</a>
-    <a href="#uses">用途</a>
-    <a href="#contact">联系</a>
-  </nav>
+<section id="home" class="section">
+    <h2>欢迎来到马来西亚胡椒农业网</h2>
+    <p>了解最新胡椒种植技巧，提高胡椒产量和品质。</p>
+</section>
 
-  <section id="types">
-    <h2>🌿 胡椒种类</h2>
-    <ul>
-      <li>黑胡椒</li>
-      <li>白胡椒</li>
-      <li>绿胡椒</li>
-      <li>红胡椒</li>
-    </ul>
-  </section>
+<section id="products" class="section">
+    <h2>优质胡椒产品</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/pepper_fresh.jpg" alt="新鲜胡椒">
+            <h3>新鲜胡椒</h3>
+            <p>来自马来西亚优质胡椒园，新鲜采摘，香味浓郁。</p>
+        </div>
+        <div class="card">
+            <img src="images/pepper_seed.jpg" alt="胡椒种子">
+            <h3>胡椒种子</h3>
+            <p>精选高产胡椒种子，适合各地种植。</p>
+        </div>
+    </div>
+</section>
 
-  <section id="uses">
-    <h2>🧪 胡椒用途</h2>
-    <p>胡椒常用于烹饪调味，也具有一定的药用价值。</p>
-  </section>
+<section id="tech" class="section">
+    <h2>胡椒种植技术</h2>
+    <p>科学施肥、合理灌溉、病虫害防治，提升产量和品质。</p>
+</section>
 
-  <section id="contact">
-    <h2>📩 联系我们</h2>
-    <p>Email: pepper@example.com</p>
-  </section>
+<section id="contact" class="section">
+    <h2>联系我们</h2>
+    <form>
+        <label>姓名</label>
+        <input type="text" name="name" required>
+        <label>电话</label>
+        <input type="tel" name="phone" required>
+        <label>留言</label>
+        <textarea name="message" rows="4" required></textarea>
+        <button type="submit">发送</button>
+    </form>
+</section>
 
-  <footer>
-    <p>© 2026 Pepper World</p>
-  </footer>
-
-  <script src="script.js"></script>
+<footer>
+    <p>© 2026 马来西亚胡椒农业网</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

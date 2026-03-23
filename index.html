@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>胡椒农业网 - 马来西亚胡椒种植与销售</title>
-    <meta name="description" content="胡椒农业网提供马来西亚胡椒种植技术、优质胡椒产品和市场资讯，帮助农户提高产量与收益。">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我的个人主页</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    p {
+      color: #555;
+      margin: 10px 0 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn1 {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .btn1:hover {
+      background: #45a049;
+    }
+
+    .btn2 {
+      background: #2196F3;
+      color: white;
+    }
+
+    .btn2:hover {
+      background: #0b7dda;
+    }
+
+  </style>
 </head>
+
 <body>
-<header>
-    <h1>🌱 马来西亚胡椒农业网</h1>
-    <p>提供胡椒种植技术与优质胡椒产品</p>
-</header>
 
-<nav>
-    <a href="#home">首页</a>
-    <a href="#products">胡椒产品</a>
-    <a href="#tech">种植技术</a>
-    <a href="#contact">联系我们</a>
-</nav>
+  <div class="card">
+    <h1>👋 你好，我是Ricky</h1>
+    <p>这是我的第一个个人网站 🚀</p>
 
-<section id="home" class="section">
-    <h2>欢迎来到马来西亚胡椒农业网</h2>
-    <p>了解最新胡椒种植技巧，提高胡椒产量和品质。</p>
-</section>
+    <button class="btn1" onclick="sayHello()">点击问候</button>
+    <button class="btn2" onclick="changeText()">改变文字</button>
 
-<section id="products" class="section">
-    <h2>优质胡椒产品</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="images/pepper_fresh.jpg" alt="新鲜胡椒">
-            <h3>新鲜胡椒</h3>
-            <p>来自马来西亚优质胡椒园，新鲜采摘，香味浓郁。</p>
-        </div>
-        <div class="card">
-            <img src="images/pepper_seed.jpg" alt="胡椒种子">
-            <h3>胡椒种子</h3>
-            <p>精选高产胡椒种子，适合各地种植。</p>
-        </div>
-    </div>
-</section>
+    <p id="text">欢迎来到我的网站！</p>
+  </div>
 
-<section id="tech" class="section">
-    <h2>胡椒种植技术</h2>
-    <p>科学施肥、合理灌溉、病虫害防治，提升产量和品质。</p>
-</section>
+  <script>
+    function sayHello() {
+      alert("你好！欢迎来到我的网站 🎉");
+    }
 
-<section id="contact" class="section">
-    <h2>联系我们</h2>
-    <form>
-        <label>姓名</label>
-        <input type="text" name="name" required>
-        <label>电话</label>
-        <input type="tel" name="phone" required>
-        <label>留言</label>
-        <textarea name="message" rows="4" required></textarea>
-        <button type="submit">发送</button>
-    </form>
-</section>
+    function changeText() {
+      document.getElementById("text").innerText =
+        "你成功点击了按钮！🔥";
+    }
+  </script>
 
-<footer>
-    <p>© 2026 马来西亚胡椒农业网</p>
-</footer>
-<script src="script.js"></script>
 </body>
 </html>

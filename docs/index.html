@@ -1,47 +1,122 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>PIPERÉ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+            text-align: center;
+        }
 
-  <title>Pippere Company | 胡椒公司官网</title>
+        header {
+            padding: 30px 20px;
+            background-color: white;
+        }
 
-  <meta name="description" content="Pippere Company 专注高品质胡椒生产与出口">
-  <meta name="keywords" content="pippere, 胡椒, spice, pippere company, Malaysia pepper">
+        header img {
+            width: 120px;
+        }
 
-  <link rel="stylesheet" href="style.css">
+        h1 {
+            margin: 10px 0;
+            letter-spacing: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 60px 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!-- 顶部导航 -->
-  <nav class="nav">
-    <h2>🌶 Pippere Company</h2>
-    <div>
-      <a href="index.html">首页</a>
-      <a href="about.html">关于我们</a>
-      <a href="products.html">产品</a>
-      <a href="contact.html">联系</a>
+<header>
+    <img src="images/logo.jpg" alt="PIPERÉ Logo">
+    <h1>PIPERÉ</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Premium Black Pepper</h2>
+    <p>Fresh. Aromatic. Direct from farm.</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Pepper">
+        <h3>Black Pepper 100g</h3>
+        <p class="price">RM 12</p>
     </div>
-  </nav>
 
-  <!-- Hero区 -->
-  <header class="hero">
-    <h1>高品质胡椒供应商 🌶</h1>
-    <p>专注种植 · 加工 · 出口优质胡椒</p>
-    <a class="btn" href="products.html">查看产品</a>
-  </header>
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Pepper">
+        <h3>Black Pepper 250g</h3>
+        <p class="price">RM 25</p>
+    </div>
 
-  <!-- 介绍 -->
-  <section class="section">
-    <h2>关于我们</h2>
-    <p>我们是一家专注胡椒生产的公司，提供高品质天然香料。</p>
-  </section>
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Pepper">
+        <h3>Premium Pepper 500g</h3>
+        <p class="price">RM 45</p>
+    </div>
 
-  <!-- 页脚 -->
-  <footer>
-    <p>© 2025 Pippere Company. All Rights Reserved.</p>
-  </footer>
+</section>
+
+<footer>
+    <p>© 2026 PIPERÉ. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
